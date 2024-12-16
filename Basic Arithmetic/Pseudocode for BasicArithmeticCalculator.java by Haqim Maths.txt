@@ -2,8 +2,12 @@
 // By Haqim Maths
 // 2024, December 16th
 
+START PROGRAM
+
+IMPORT java.util.Scanner
+
 CLASS BasicArithmeticCalculator
- PROCEDURE main(String[] args)
+ PROCEDURE main(args)
   // Declare variables
   DECLARE double a
   DECLARE double b
@@ -33,8 +37,12 @@ CLASS BasicArithmeticCalculator
    DEFAULT:
     SET result TO -1
     PRINT "Error, cannot complete the calculation, unknown operation detected... the result will be negative -1"
+    PRINT NEW LINE
    END SWITCH
    // Print the result
    PRINT "The result of variable a (" + a + ") " + operation + " variable b (" + b + ") is: " + result
+   PRINT NEW LINE
   END PROCEDURE
 END CLASS
+
+END PROGRAM
