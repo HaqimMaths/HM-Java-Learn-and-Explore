@@ -1,4 +1,4 @@
-// Psueodocode for BasicArithmeticCalculator.java
+// Pseuodocode for BasicArithmeticCalculator.java
 // By Haqim Maths
 // 2024, December 16th
 
