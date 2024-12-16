@@ -1,0 +1,40 @@
+// Psueodocode for BasicArithmeticCalculator.java
+// By Haqim Maths
+// 2024, December 16th
+
+CLASS BasicArithmeticCalculator
+ PROCEDURE main(String[] args)
+  // Declare variables
+  DECLARE double a
+  DECLARE double b
+  DECLARE char operation
+  DECLARE double result
+  // Declare and initialize Scanner
+  DECLARE Scanner input AND SET input TO new Scanner(System.in)
+  // Get input from the user
+  PRINT "Enter the value for variable a: "
+  SET a TO input.nextDouble()
+  PRINT "Enter the value for variable b: "
+  SET b TO input.nextDouble()
+  PRINT "Enter the operation: (+ - * / %): "
+  SET operation TO input.next().charAt(0)
+  // Perform the switch case operation
+  SWITCH operation
+   CASE '+':
+    SET result TO a + b
+   CASE '-':
+    SET result TO a - b
+   CASE '*':
+    SET result TO a * b
+   CASE '/'
+    SET result TO a / b
+   CASE '%':
+    SET result TO (int) a % (int) b
+   DEFAULT:
+    SET result TO -1
+    PRINT "Error, cannot complete the calculation, unknown operation detected... the result will be negative -1"
+   END SWITCH
+   // Print the result
+   PRINT "The result of variable a (" + a + ") " + operation + " variable b (" + b + ") is: " + result
+  END PROCEDURE
+END CLASS
